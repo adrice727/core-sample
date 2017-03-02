@@ -5,15 +5,17 @@
   <title>Accelerator Core</title>
   <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
   <script src="app.js"></script>
+  <link rel="stylesheet" href="https://assets.tokbox.com/solutions/css/style.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="main">
-    <div class="start-call-mask">
-      <button id="startCall" class="btn"></button>
+    <div id="mask" class="start-call-mask">
+      <button id="startCall" class="btn hidden"></button>
     </div>
     <div id="streams" class="streams"></div>
+    <div id="chatContainer" class="chat"></div>
   </div>
 
 </body>

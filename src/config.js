@@ -1,17 +1,18 @@
+const credentials = require('../credentials.js');
+
 const config = {
-  // A container can either be a query selector or an HTMLElement
-  credentials: {
-    apiKey: null,
-    sessionId: null,
-    token: null,
-  },
-  streamContainers: '#streams',
-  controlsContainer: '#controls',
+  credentials,
+  streamContainers: () => '#streams',
+  controlsContainer: null,
   packages: ['textChat', 'screenSharing'],
+  textChat: {
+    alwaysOpen: true,
+    name: `user ${Math.random() * 100 | 0}`,
+  },
   screenSharing: {
     extensionID: 'plocfffmbcclpdifaikiikgplfnepkpo',
     dev: true,
-  }
+  },
 };
 
 

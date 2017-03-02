@@ -1,23 +1,16 @@
 const otCore = require('opentok-accelerator-core');
 const config = require('./config.js');
 
-const run  = () => {
+const { dom } = otCore.util;
 
+const init = () => {
+  const start = () => {
+    dom.id('mask').classList.add('hidden');
+    otCore.startCall();
+  };
+  otCore.init(config);
+  otCore.connect().then(dom.id('startCall').classList.remove('hidden'));
+  dom.id('startCall').addEventListener('click', start);
+};
 
-
-
-
-
-
-  const init = () => {
-    otCore.init(config);
-    otCore.connect().then(orCore.startCall);
-  }
-
-
-
-  init();
-
-}
-
-document.addEventListener('DOMContentLoaded', run);
+document.addEventListener('DOMContentLoaded', init);

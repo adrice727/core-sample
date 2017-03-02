@@ -17,6 +17,7 @@ body {
   height: 48vw;
   margin: 20px auto;
   font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid lightblue;
 }
 
 .start-call-mask {
@@ -54,5 +55,11 @@ body {
 
 .streams>div {
   flex: 1 1 33.3%;
-  border: 1px solid purple;
+  border: 1px solid lightcoral;
+}
+
+.chat {
+  width: 80vw;
+  height: 48vw;
+  margin: 0 auto;
 }
