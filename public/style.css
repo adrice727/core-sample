@@ -8,9 +8,13 @@ body {
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main {
-  width: 70vw;
-  height: calc(70vw*.6);
+  width: 80vw;
+  height: 48vw;
   margin: 20px auto;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,4 +54,5 @@ body {
 
 .streams>div {
   flex: 1 1 33.3%;
+  border: 1px solid purple;
 }
