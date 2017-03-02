@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <title>Accelerator Core</title>
   <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+  <script src="app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="main">
-    <div id="startCall" class="start-call">Start Call</div>
+    <div class="start-call-mask">
+      <button id="startCall" class="btn"></button>
+    </div>
     <div id="streams" class="streams"></div>
   </div>
 
