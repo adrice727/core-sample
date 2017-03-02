@@ -1,0 +1,29 @@
+{
+  "name": "core-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/app.js -o public/app.js --im"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrice727/core-sample.git"
+  },
+  "author": "adrice727@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrice727/core-sample/issues"
+  },
+  "homepage": "https://github.com/adrice727/core-sample#readme",
+  "dependencies": {
+    "express": "^4.15.0",
+    "opentok-accelerator-core": "^1.0.9",
+    "opentok-screen-sharing": "^1.0.25",
+    "opentok-text-chat": "^1.0.26"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  }
+}
