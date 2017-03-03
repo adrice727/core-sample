@@ -1,4 +1,4 @@
-Multi-Party Video + Text Chat with Opentok Accelerator Core
+Multi-Party Video + Text Chat with [Opentok Accelerator Core](https://github.com/opentok/accelerator-core-js)
 -----------------------------------------------------------
 
 Add `./credentials.js`:
